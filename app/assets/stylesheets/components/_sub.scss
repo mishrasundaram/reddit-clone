@@ -1,0 +1,154 @@
+.sub.form {
+    padding-top: 12px;
+}
+
+.sub input[type="text"], .sub textarea {
+    border-bottom: 1px solid $light-grey;
+}
+
+.sub .heading {
+    display: flex;
+    justify-content: flex-end;
+    padding: 18px;
+}
+
+.sub .sub-heading { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sub .button {
+    background-color: $orange;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    width: 190px;
+    text-align: center;
+}
+
+.sub .button.small {
+    padding: 3px 10px;
+    font-size: 12px;
+    display: inline-block;
+    width: auto;
+    margin-left: 10px;
+}
+
+.sub .button:hover {
+    background-color: $light-orange;
+}
+
+.sub .heading h1 {
+    display: none;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sub .list div {
+    background-color: #fff;
+    padding: 16px;
+    position: relative;
+    border-left: 1px solid $data-grey;
+    border-right: 1px solid $data-grey;
+}
+
+.sub .list div::after {
+    content: "";
+    display: block;
+    background-color: $light-grey;
+    height: 1px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub .list a {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 16px;
+}
+
+.sub .list div:first-of-type {
+    border-radius: 4px 4px 0 0;
+    border-top: 1px solid $data-grey;
+}
+
+.sub .list div:last-of-type {
+    border-radius: 0 0 4px 4px;
+    border-bottom: 1px solid $data-grey;
+}
+
+.sub .details {
+    background-color: #fff;
+    // border-bottom: 1px solid $data-grey;
+    padding: 24px;
+}
+
+.sub .details .heading {
+    border: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.sub .details .button {
+    width: 100px;
+}
+
+.sub .details h1 {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.sub .details p {
+    color: $text-grey;
+    font-size: 16px;
+    width: 100%;
+    margin: 6px 0 10px 0;
+}
+
+.sub .data span {
+    margin-right: 12px;
+}
+
+.sub .post .button {
+    background-color: $blue;
+}
+
+.sub .post .button:hover {
+    background-color: $light-blue;
+}
+
+@media all and (min-width: 750px) {
+    .sub.form {
+        margin-top: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .sub .heading h1 {
+        display: block;
+    }
+
+    .sub .heading {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px;
+        border-bottom: 1px solid $light-grey;
+    }
+
+    .sub .details p {
+        width: 66%;
+    }
+}

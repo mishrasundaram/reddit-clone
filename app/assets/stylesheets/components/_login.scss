@@ -1,0 +1,40 @@
+.login .art {
+    display: none;
+}
+
+.activate {
+    text-transform: uppercase;
+    background-color: $lightest-blue;
+    margin-top: 16px;
+}
+
+.email p {
+    margin: 16px 0;
+}
+
+.email .notice {
+    text-align: left;
+    margin-top: 32px;
+}
+
+@media all and (min-width: 750px) {
+    .login .art {
+        display: block;
+        background-image: image-url("leaves_left_panel.jpg");
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 130px;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .login .form-container {
+        margin-left: 130px;
+    }
+
+    .activate {
+        width: 390px; 
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,134 @@
+#post_title {
+    border-bottom: none;
+}
+
+.form.post {
+    padding-top: 12px;
+}
+
+.post input[type="text"], .post textarea {
+    border-bottom: 1px solid $light-grey;
+}
+
+.no-match {
+    font-size: 12px;
+    font-weight: 500;
+    color: $red;
+}
+
+.sub-options input {
+    display: inline-block;
+    width: 80%;
+    border: 1px solid $light-grey;
+    border-radius: 4px 0 0 4px;
+}
+
+.sub-options button {
+    display: inline-block;
+    background-color: $blue;
+    color: #fff;
+    padding: 11px 16px;
+    vertical-align: top;
+    border-radius: 4px;
+    border-radius: 0 4px 4px 0;
+    margin-left: -6px;
+}
+
+.sub-options button:hover {
+    background-color: $light-blue;
+}
+
+.selected-subs label {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.selected-subs input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.selected-subs label {
+    cursor: pointer;
+}
+
+section.post {
+    margin: 32px auto;
+    width: 95%;
+}
+
+.post h2 a {
+    color: inherit;
+}
+
+.post h2 a:hover {
+    text-decoration: none;
+}
+
+.post-details section, .post-details section:hover {
+    border: none;
+}
+
+.upvote-percentage {
+    float: right;
+}
+
+.delete-link input[type="submit"] {
+    color: $dark-red;
+}
+
+.delete-link input[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+.thoughts {
+    margin-top: 32px;
+    border-top: 1px solid $light-grey;
+}
+
+.thoughts textarea {
+    border: 1px solid $light-grey;
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.save-button {
+    background-color: $blue;
+    color: #fff;
+    margin-top: 16px;
+    padding: 5px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.save-button:hover {
+    background-color: $light-blue;
+} 
+
+@media all and (min-width: 750px) {
+    #post_title {
+        border-bottom: 1px solid $light-grey;
+    }
+
+    .form.post {
+        margin-top: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .sub-options button {
+        padding: 10px 16px;
+    }
+
+    .thoughts textarea {
+        width: 50%;
+    }
+}

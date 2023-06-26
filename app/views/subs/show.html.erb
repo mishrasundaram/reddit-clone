@@ -1,0 +1,37 @@
+<% @title = "Sub: #{@sub.title}" %>
+
+<div class="sub bottom-padding">
+<section class="details">
+    <div class="heading">
+        <h1>subs/<%= @sub.title %></h1>
+        <%= button_to('Join', subscribe_sub_url(@sub), class: "button") if current_user %>
+    </div>
+
+    <p><%= @sub.description %></p>
+
+    <div class="data">
+        <span>
+            Moderated by 
+            <% if @moderator.username == DESTROYED %>
+                <%= DESTROYED %>
+            <% else %>
+                <%= link_to @moderator.username, user_url(@moderator) %>
+            <% end %>
+        </span>
+
+        <span><%= @sub.subscriptions.count %> members</span>
+        <% if current_user == @moderator %>
+            <span><%= link_to "Edit Sub", edit_sub_url(@sub) %></span>
+        <% end %>
+    </div>
+</section>
+
+<section class="post">
+    <%= link_to "Create Post", new_post_url(sub_id: @sub.id), class: "button" %>
+    <% if @posts.empty? %>
+        <p class="nothing-posted">No posts to see here</p>
+    <% else %>
+        <%= render "posts/list", posts: @posts, short: true %>
+     <% end %>
+</section>
+</div>
